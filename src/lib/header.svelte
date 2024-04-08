@@ -3,68 +3,40 @@
 </script>
 
 <header>
-	<nav>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
-		</svg>
-		<ul>
-			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">Home</a>
-			</li>
-			<li aria-current={$page.url.pathname === '/faq' ? 'page' : undefined}>
-				<a href="/faq">FAQ</a>
-			</li>
-			<li aria-current={$page.url.pathname.startsWith('/timetable') ? 'page' : undefined}>
-				<a href="/timetable">Timetable</a>
-			</li>
-			<li aria-current={$page.url.pathname.startsWith('/workshops') ? 'page' : undefined}>
-				<a href="/workshops">Workshops</a>
-			</li>
-			<li aria-current={$page.url.pathname.startsWith('/anfahrt') ? 'page' : undefined}>
-				<a href="/anfahrt">Anfahrt</a>
-			</li>
-		</ul>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
-		</svg>
-	</nav>
+	<ul>
+		<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
+			<a href="/" data-sveltekit-replacestate>Home</a>
+		</li>
+		<li aria-current={$page.url.pathname.startsWith('/faq') ? 'page' : undefined}>
+			<a href="/faq" data-sveltekit-replacestate>FAQ</a>
+		</li>
+		<li aria-current={$page.url.pathname.startsWith('/timetable') ? 'page' : undefined}>
+			<a href="/timetable" data-sveltekit-replacestate>Timetable</a>
+		</li>
+		<li aria-current={$page.url.pathname.startsWith('/workshops') ? 'page' : undefined}>
+			<a href="/workshops" data-sveltekit-replacestate>Workshops</a>
+		</li>
+		<li aria-current={$page.url.pathname.startsWith('/anfahrt') ? 'page' : undefined}>
+			<a href="/anfahrt" data-sveltekit-replacestate>Anfahrt</a>
+		</li>
+	</ul>
 </header>
 
 <style>
 	header {
-		display: flex;
-		justify-content: center;
 		view-transition-name: header;
-	}
-
-	nav {
-		display: flex;
-		justify-content: center;
-		--background: rgba(255, 255, 255, 0.7);
-	}
-
-	svg {
-		width: 2em;
-		height: 3em;
-		display: block;
-	}
-
-	path {
-		fill: var(--background);
 	}
 
 	ul {
 		position: relative;
 		padding: 0;
 		margin: 0;
-		height: 3em;
 		display: flex;
-        gap: 2em;
+		flex-wrap: wrap;
+		gap: 0rem 2em;
 		justify-content: center;
 		align-items: center;
 		list-style: none;
-		background: var(--background);
-		background-size: contain;
 	}
 
 	li {
@@ -73,11 +45,11 @@
 	}
 
 	li[aria-current='page']::before {
-		--size: 6px;
+		position: absolute;
 		content: '';
+		--size: 6px;
 		width: 0;
 		height: 0;
-		position: absolute;
 		top: 0;
 		left: calc(50% - var(--size));
 		border: var(--size) solid transparent;
@@ -85,9 +57,9 @@
 		view-transition-name: active-page;
 	}
 
-	nav a {
+	a {
 		display: flex;
-		height: 100%;
+		height: 3em;
 		align-items: center;
 		padding: 0 0.5rem;
 		color: var(--color-text);
