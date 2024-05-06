@@ -29,7 +29,7 @@
 		},
 		{
 			"src": "/favicon910x512.png",
-			"type": "image/webp",
+			"type": "image/png",
 			"sizes": "512x512"
 		}
 	],
