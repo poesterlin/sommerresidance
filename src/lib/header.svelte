@@ -108,7 +108,7 @@
 />
 
 <header>
-	<button on:click={() => (show = !show)}>
+	<button on:click={() => (show = !show)} aria-label="Menü {expanded ? 'schließen' : 'öffnen'}">
 		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
 			{#if expanded}
 				<g transition:rotate={{}}>
@@ -134,7 +134,7 @@
 			<a href="/anfahrt" data-sveltekit-replacestate>Anfahrt</a>
 		</li>
 		<li aria-current={$page.url.pathname.startsWith('/faq') ? 'page' : undefined}>
-			<a href="/faq" data-sveltekit-replacestate>Faq</a>
+			<a href="/faq" data-sveltekit-replacestate>FAQ</a>
 		</li>
 		<li aria-current={$page.url.pathname.startsWith('/workshops') ? 'page' : undefined}>
 			<a href="/workshops" data-sveltekit-replacestate>Workshops</a>
