@@ -1,13 +1,30 @@
 <script lang="ts">
 	import { afterNavigate } from '$app/navigation';
 	import { page } from '$app/stores';
-	import { flip } from 'svelte/animate';
+	import { onMount } from 'svelte';
 
 	let width = 0;
 	$: isMobile = width < 800;
 
 	let show = false;
 	$: expanded = isMobile && show;
+
+	let isDragging = false;
+	let startX = 0;
+	let panelDelta = 0;
+
+	let sliderEl: HTMLUListElement;
+	let sliderWidth: number;
+
+	onMount(() => {
+		const observer = new ResizeObserver((entries) => {
+			for (let entry of entries) {
+				sliderWidth = entry.contentRect.width;
+			}
+		});
+
+		observer.observe(sliderEl);
+	});
 
 	afterNavigate(() => {
 		show = false;
@@ -23,9 +40,61 @@
 			`
 		};
 	}
+
+	function update(event: PointerEvent) {
+		if (!isDragging) {
+			return;
+		}
+
+		panelDelta = event.clientX - startX;
+	}
+
+	function start(event: PointerEvent) {
+		if (!isMobile) {
+			return;
+		}
+
+		isDragging = true;
+		startX = event.clientX;
+	}
+
+	function stop() {
+		isDragging = false;
+
+		if (Math.abs(panelDelta) > width / 3) {
+			show = panelDelta < 0;
+		}
+
+		panelDelta = 0;
+	}
+
+	function toPercent(valueInPixels: number) {
+		if (valueInPixels === 0) return '';
+
+		const current = show ? 0 : 1;
+		const value = valueInPixels / sliderWidth;
+		const sum = current + value;
+		const clamped = Math.min(1, Math.max(0, sum));
+
+		return `${clamped * 100}%`;
+	}
+
+	function noSelect(event: Event) {
+		if (isDragging) {
+			event.preventDefault();
+			event.stopPropagation();
+		}
+	}
 </script>
 
-<svelte:window bind:innerWidth={width} />
+<svelte:window
+	bind:innerWidth={width}
+	on:pointerdown={start}
+	on:pointermove={update}
+	on:pointerup={stop}
+	on:click={stop}
+	on:select={noSelect}
+/>
 
 <header>
 	<button on:click={() => (show = !show)}>
@@ -44,10 +113,12 @@
 		</svg>
 	</button>
 
-	<ul class:expanded>
-		<!-- <li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/" data-sveltekit-replacestate>Home</a>
-			</li> -->
+	<ul
+		bind:this={sliderEl}
+		class:expanded
+		style:translate={toPercent(panelDelta)}
+		class:immediate={panelDelta !== 0}
+	>
 		<li aria-current={$page.url.pathname.startsWith('/anfahrt') ? 'page' : undefined}>
 			<a href="/anfahrt" data-sveltekit-replacestate>Anfahrt</a>
 		</li>
@@ -74,6 +145,11 @@
 		view-transition-name: header;
 		color: black;
 		padding: 10rem 2rem;
+		user-select: none;
+	}
+
+	* {
+		cursor: default;
 	}
 
 	svg {
@@ -124,26 +200,26 @@
 			will-change: transform;
 			top: 0;
 			right: 0;
-			padding: 6rem 4rem;
+			padding: 6rem 8% 8rem;
 			height: 100dvh;
 			background: color-mix(in srgb, var(--color), white 15%);
 			z-index: 1;
-			transform: translateX(100%);
+			translate: 100% 0;
 			box-shadow: -2px 0 12px rgba(0, 0, 0, 0.15);
 		}
 
 		ul.expanded {
-			transform: translateX(0);
+			translate: 0 0;
 		}
 
 		a {
-			font-size: 4rem;
+			font-size: 3.5rem;
 		}
 	}
 
 	@media (prefers-reduced-motion: no-preference) {
-		ul {
-			transition: transform 0.3s cubic-bezier(0, 0.56, 0.32, 1);
+		ul:not(.immediate) {
+			transition: translate 0.3s cubic-bezier(0, 0.56, 0.32, 1);
 		}
 	}
 </style>

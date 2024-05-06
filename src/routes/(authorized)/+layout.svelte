@@ -53,12 +53,13 @@
 		height: 100dvh;
 		background-color: var(--color);
 		color: var(--font-color);
-		view-transition-name: root;
+		view-transition-name: page;
 	}
 
 	main {
 		padding: 1rem;
 		view-transition-name: main;
+		user-select: auto;
 	}
 
 	@keyframes fade-in {
