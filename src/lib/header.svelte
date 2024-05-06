@@ -1,17 +1,48 @@
 <script lang="ts">
+	import { afterNavigate } from '$app/navigation';
 	import { page } from '$app/stores';
+	import { flip } from 'svelte/animate';
 
 	let width = 0;
 	$: isMobile = width < 800;
 
 	let show = false;
 	$: expanded = isMobile && show;
+
+	afterNavigate(() => {
+		show = false;
+	});
+
+	function rotate(_node: any, { delay = 0, duration = 200 }) {
+		return {
+			delay,
+			duration,
+			css: (t: number) => `transform: rotateY(${t * 180}deg);
+			opacity: ${t - 0.3};
+			transform-origin: 50% 50%;
+			`
+		};
+	}
 </script>
 
 <svelte:window bind:innerWidth={width} />
 
 <header>
-	<button on:click={() => (show = !show)}> {expanded ? 'close' : 'open'} </button>
+	<button on:click={() => (show = !show)}>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+			{#if expanded}
+				<g transition:rotate={{}}>
+					<path
+						d="M21 6.41L19.59 5 12 12.59 4.41 5 3 6.41 10.59 14 3 21.59 4.41 23 12 15.41 19.59 23 21 21.59 13.41 14 21 6.41z"
+					/>
+				</g>
+			{:else}
+				<g transition:rotate={{}} fill="var(--font-color)">
+					<path d="M3 18h18v-2H3v2zM3 13h18v-2H3v2zM3 6v2h18V6H3z" />
+				</g>
+			{/if}
+		</svg>
+	</button>
 
 	<ul class:expanded>
 		<!-- <li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
@@ -45,6 +76,10 @@
 		padding: 10rem 2rem;
 	}
 
+	svg {
+		scale: 1.5;
+	}
+
 	ul {
 		margin: 0;
 		display: grid;
@@ -70,6 +105,8 @@
 
 	button {
 		display: none;
+		border: 0;
+		background: none;
 	}
 
 	/* mobile */
@@ -77,24 +114,36 @@
 		button {
 			display: block;
 			position: fixed;
-			top: 2rem;
+			top: 3rem;
 			right: 2rem;
 			z-index: 2;
 		}
 
 		ul {
-			display: none;
+			position: fixed;
+			will-change: transform;
 			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background: var(--color);
+			right: 0;
+			padding: 6rem 4rem;
+			height: 100dvh;
+			background: color-mix(in srgb, var(--color), white 15%);
 			z-index: 1;
-			transition: transform 0.2s ease-in-out;
+			transform: translateX(100%);
+			box-shadow: -2px 0 12px rgba(0, 0, 0, 0.15);
 		}
 
 		ul.expanded {
-			position: fixed;
+			transform: translateX(0);
+		}
+
+		a {
+			font-size: 4rem;
+		}
+	}
+
+	@media (prefers-reduced-motion: no-preference) {
+		ul {
+			transition: transform 0.3s cubic-bezier(0, 0.56, 0.32, 1);
 		}
 	}
 </style>
