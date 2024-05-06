@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { colorMap, getFontColor } from '$lib/colors';
+	import { colorMap } from '$lib/colors';
 	import TextLogo from '$lib/text-logo.svelte';
 
 	const pages = ['anfahrt', 'timetable', 'regeln', 'camping', 'workshops', 'faq'];
@@ -28,6 +28,7 @@
 		width: 100%;
 		max-width: 1600px;
 		margin: 0 auto;
+		background: white;
 	}
 
 	ul {

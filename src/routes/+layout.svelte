@@ -2,5 +2,10 @@
 	import './styles.css';
 </script>
 
-<slot></slot>
+<slot />
 
+<style>
+	:global(body) {
+		background-color: white;
+	}
+</style>
