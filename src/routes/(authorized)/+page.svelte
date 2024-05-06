@@ -1,11 +1,12 @@
 <script lang="ts">
 	import { colorMap, getFontColor } from '$lib/colors';
+	import TextLogo from '$lib/text-logo.svelte';
 
 	const pages = ['anfahrt', 'timetable', 'regeln', 'camping', 'workshops', 'faq'];
 </script>
 
 <main>
-	<img src="/text-logo.svg" alt="Sommerresidance logo text" />
+	<TextLogo></TextLogo>
 	<ul>
 		{#each pages as page}
 			{@const color = colorMap.get(page) ?? '#ffffff'}
@@ -24,18 +25,18 @@
 		display: grid;
 		grid-template-rows: auto 60dvh;
 		padding: 1rem;
+		width: 100%;
+		max-width: 1600px;
+		margin: 0 auto;
 	}
 
 	ul {
-		padding: 0;
+		padding: 0 2rem;
 		display: grid;
 		grid-template-rows: 1fr 1fr;
 		grid-template-columns: 1fr 1fr 1fr;
 		gap: 5rem 20rem;
 		list-style: none;
-		width: 100%;
-		max-width: 1600px;
-		margin: 0 auto;
 	}
 
 	li {
@@ -58,6 +59,15 @@
 
 	a:hover {
 		box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+	}
+
+	/* medium style */
+	@media (max-width: 1300px) {
+		ul {
+			grid-template-rows: 1fr 1fr 1fr;
+			grid-template-columns: 1fr 1fr;
+			gap: 2rem;
+		}
 	}
 
 	/* mobile style */

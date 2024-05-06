@@ -1,12 +1,13 @@
 <script lang="ts">
 	import { enhance } from '$app/forms';
+	import TextLogo from '$lib/text-logo.svelte';
 
 	export let form;
 </script>
 
 <main>
 	<form use:enhance method="post">
-		<!-- <img src="/text-logo.svg" alt="Sommerresidance logo text" /> -->
+		<TextLogo></TextLogo>
 
 		<input type="text" name="code" value={form?.password ?? ''} placeholder="Codewort" required />
 		{#if form?.hint}

@@ -1,9 +1,19 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+
+	let width = 0;
+	$: isMobile = width < 800;
+
+	let show = false;
+	$: expanded = isMobile && show;
 </script>
 
+<svelte:window bind:innerWidth={width} />
+
 <header>
-	<ul>
+	<button on:click={() => (show = !show)}> {expanded ? 'close' : 'open'} </button>
+
+	<ul class:expanded>
 		<!-- <li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
 				<a href="/" data-sveltekit-replacestate>Home</a>
 			</li> -->
@@ -56,5 +66,35 @@
 		letter-spacing: 0.1em;
 		text-decoration: none;
 		transition: color 0.2s linear;
+	}
+
+	button {
+		display: none;
+	}
+
+	/* mobile */
+	@media (max-width: 800px) {
+		button {
+			display: block;
+			position: fixed;
+			top: 2rem;
+			right: 2rem;
+			z-index: 2;
+		}
+
+		ul {
+			display: none;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: var(--color);
+			z-index: 1;
+			transition: transform 0.2s ease-in-out;
+		}
+
+		ul.expanded {
+			position: fixed;
+		}
 	}
 </style>
