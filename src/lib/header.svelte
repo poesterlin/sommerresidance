@@ -11,6 +11,7 @@
 
 	let isDragging = false;
 	let startX = 0;
+	let startY = 0;
 	let panelDelta = 0;
 
 	let sliderEl: HTMLUListElement;
@@ -51,6 +52,9 @@
 		}
 
 		panelDelta = event.clientX - startX;
+		if (Math.abs(event.clientY - startY) > 70) {
+			stop();
+		}
 	}
 
 	function start(event: PointerEvent) {
@@ -60,6 +64,7 @@
 
 		isDragging = true;
 		startX = event.clientX;
+		startY = event.clientY;
 	}
 
 	function stop() {
