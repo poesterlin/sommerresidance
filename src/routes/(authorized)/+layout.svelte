@@ -1,6 +1,13 @@
 <script lang="ts">
-	import { onNavigate } from '$app/navigation';
+	import { afterNavigate, onNavigate } from '$app/navigation';
+	import { page } from '$app/stores';
+	import { colorMap, getFontColor } from '$lib/colors';
 	import Header from '$lib/header.svelte';
+
+	const defaultColor = '#ffffff';
+	let color = defaultColor;
+
+	$: isRoot = $page.url.pathname === '/';
 
 	onNavigate((navigation) => {
 		if (!document.startViewTransition) return;
@@ -12,23 +19,46 @@
 			});
 		});
 	});
+
+	afterNavigate((navigation) => {
+		let route = navigation.to?.route.id;
+		if (!route) {
+			return;
+		}
+
+		// route starts with '/(authorized)/'
+		route = route.split('/').slice(2).join('/');
+
+		if (route && colorMap.has(route)) {
+			color = colorMap.get(route) ?? defaultColor;
+		}
+	});
 </script>
 
-<Header />
-
-<main>
+{#if isRoot}
 	<slot />
-</main>
+{:else}
+	<div style:--color={color} style:--font-color={getFontColor(color)}>
+		<main>
+			<slot />
+		</main>
+		<Header />
+	</div>
+{/if}
 
 <style>
-	:global(body) {
-		font-family: Arial, sans-serif;
-		margin: 0;
-		padding: 0;
+	div {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		height: 100dvh;
+		background-color: var(--color);
+		color: var(--font-color);
+		view-transition-name: root;
 	}
 
 	main {
 		padding: 1rem;
+		view-transition-name: main;
 	}
 
 	@keyframes fade-in {

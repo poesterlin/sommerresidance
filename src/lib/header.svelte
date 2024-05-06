@@ -4,20 +4,26 @@
 
 <header>
 	<ul>
-		<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-			<a href="/" data-sveltekit-replacestate>Home</a>
+		<!-- <li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
+				<a href="/" data-sveltekit-replacestate>Home</a>
+			</li> -->
+		<li aria-current={$page.url.pathname.startsWith('/anfahrt') ? 'page' : undefined}>
+			<a href="/anfahrt" data-sveltekit-replacestate>Anfahrt</a>
 		</li>
 		<li aria-current={$page.url.pathname.startsWith('/faq') ? 'page' : undefined}>
-			<a href="/faq" data-sveltekit-replacestate>FAQ</a>
-		</li>
-		<li aria-current={$page.url.pathname.startsWith('/timetable') ? 'page' : undefined}>
-			<a href="/timetable" data-sveltekit-replacestate>Timetable</a>
+			<a href="/faq" data-sveltekit-replacestate>Faq</a>
 		</li>
 		<li aria-current={$page.url.pathname.startsWith('/workshops') ? 'page' : undefined}>
 			<a href="/workshops" data-sveltekit-replacestate>Workshops</a>
 		</li>
-		<li aria-current={$page.url.pathname.startsWith('/anfahrt') ? 'page' : undefined}>
-			<a href="/anfahrt" data-sveltekit-replacestate>Anfahrt</a>
+		<li aria-current={$page.url.pathname.startsWith('/camping') ? 'page' : undefined}>
+			<a href="/camping" data-sveltekit-replacestate>Camping</a>
+		</li>
+		<li aria-current={$page.url.pathname.startsWith('/timetable') ? 'page' : undefined}>
+			<a href="/timetable" data-sveltekit-replacestate>Timetable</a>
+		</li>
+		<li aria-current={$page.url.pathname.startsWith('/regeln') ? 'page' : undefined}>
+			<a href="/regeln" data-sveltekit-replacestate>Regeln</a>
 		</li>
 	</ul>
 </header>
@@ -25,53 +31,30 @@
 <style>
 	header {
 		view-transition-name: header;
+		color: black;
+		padding: 10rem 2rem;
 	}
 
 	ul {
-		position: relative;
-		padding: 0;
 		margin: 0;
-		display: flex;
-		flex-wrap: wrap;
-		gap: 0rem 2em;
-		justify-content: center;
+		display: grid;
+		justify-content: end;
 		align-items: center;
 		list-style: none;
-	}
-
-	li {
-		position: relative;
 		height: 100%;
 	}
 
-	li[aria-current='page']::before {
-		position: absolute;
-		content: '';
-		--size: 6px;
-		width: 0;
-		height: 0;
-		top: 0;
-		left: calc(50% - var(--size));
-		border: var(--size) solid transparent;
-		border-top: var(--size) solid var(--color-theme-1);
-		view-transition-name: active-page;
+	li[aria-current='page'] a {
+		color: white;
 	}
 
 	a {
-		display: flex;
-		height: 3em;
-		align-items: center;
-		padding: 0 0.5rem;
-		color: var(--color-text);
-		font-weight: 700;
-		font-size: 0.8rem;
-		text-transform: uppercase;
+		color: black;
+		display: block;
+		font-size: 5rem;
+		text-align: right;
 		letter-spacing: 0.1em;
 		text-decoration: none;
 		transition: color 0.2s linear;
-	}
-
-	a:hover {
-		color: var(--color-theme-1);
 	}
 </style>

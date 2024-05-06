@@ -13,11 +13,11 @@ export const actions: Actions = {
     default: async ({ cookies, request }) => {
         const form = await request.formData();
 
-        if (!form.has("password")) {
+        if (!form.has("code")) {
             return fail(400, { message: "Codewort", hint: PASSWORD_HINT, password: "" });
         }
 
-        let password = form.get("password");
+        let password = form.get("code");
 
         if (typeof password !== "string") {
             return fail(400, { message: "Password must be a string", hint: PASSWORD_HINT, password: "" });
