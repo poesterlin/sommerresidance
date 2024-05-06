@@ -70,7 +70,7 @@
 	function stop() {
 		isDragging = false;
 
-		if (Math.abs(panelDelta) > width / 3) {
+		if (Math.abs(panelDelta) > width / 4) {
 			show = panelDelta < 0;
 		}
 
