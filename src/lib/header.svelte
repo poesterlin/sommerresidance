@@ -41,9 +41,13 @@
 		};
 	}
 
-	function update(event: PointerEvent) {
+	function update(event: PointerEvent | TouchEvent | Touch) {
 		if (!isDragging) {
 			return;
+		}
+
+		if (event instanceof TouchEvent) {
+			event = event.touches[0];
 		}
 
 		panelDelta = event.clientX - startX;
@@ -91,7 +95,9 @@
 	bind:innerWidth={width}
 	on:pointerdown={start}
 	on:pointermove={update}
+	on:touchmove={update}
 	on:pointerup={stop}
+	on:touchend={stop}
 	on:click={stop}
 	on:select={noSelect}
 />

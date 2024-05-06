@@ -78,10 +78,14 @@
 {/if}
 
 <style>
+	:global(body) {
+		background-color: var(--prev-color, white);
+	}
+
 	div {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		height: 100dvh;
+		min-height: 100dvh;
 		background-color: var(--color);
 		color: var(--font-color);
 	}
@@ -90,10 +94,6 @@
 		padding: 1rem;
 		view-transition-name: main;
 		user-select: auto;
-	}
-
-	:global(body) {
-		background-color: var(--prev-color, white);
 	}
 
 	@keyframes fade-in {
@@ -110,7 +110,7 @@
 
 	@keyframes slide-from-right {
 		from {
-			transform: translateX(100%);
+			transform: translateX(60%);
 		}
 	}
 

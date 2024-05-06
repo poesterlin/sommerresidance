@@ -31,6 +31,21 @@
 		background: white;
 	}
 
+	main::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: white;
+		z-index: -1;
+	}
+
+	:global(body) {
+		background: white;
+	}
+
 	ul {
 		padding: 0 2rem;
 		display: grid;
