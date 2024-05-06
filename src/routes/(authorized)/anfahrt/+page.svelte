@@ -1,3 +1,5 @@
+<svelte:head><title>Anfahrt | SommerResiDance</title></svelte:head>
+
 <h1>Anfahrt</h1>
 <s>
 	<p>Die Adresse des Festivals lautet: <strong>Am Flugplatz 1, 99867 Gotha</strong></p>

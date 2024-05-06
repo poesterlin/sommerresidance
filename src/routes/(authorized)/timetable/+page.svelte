@@ -1,3 +1,5 @@
+<svelte:head><title>Timetable | SommerResiDance</title></svelte:head>
+
 <h1>Timetable</h1>
 
 <s>

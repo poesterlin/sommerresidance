@@ -1,3 +1,5 @@
+<svelte:head><title>FAQ | SommerResiDance</title></svelte:head>
+
 <h1>FAQ</h1>
 
 <s>

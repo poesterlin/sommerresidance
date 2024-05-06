@@ -1,3 +1,5 @@
+<svelte:head><title>Regeln | SommerResiDance</title></svelte:head>
+
 <h1>Regeln</h1>
 
 <p>Die Regeln des Festivals sind einfach und klar:</p>

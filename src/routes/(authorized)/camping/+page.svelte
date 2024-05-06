@@ -1,3 +1,5 @@
+<svelte:head><title>Camping | SommerResiDance</title></svelte:head>
+
 <h1>Camping</h1>
 <s>
 	<p>Das Campinggelände befindet sich direkt am Festivalgelände.</p>

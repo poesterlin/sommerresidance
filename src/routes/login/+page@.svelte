@@ -5,6 +5,8 @@
 	export let form;
 </script>
 
+<svelte:head><title>Login | SommerResiDance</title></svelte:head>
+
 <main>
 	<form use:enhance method="post">
 		<TextLogo></TextLogo>

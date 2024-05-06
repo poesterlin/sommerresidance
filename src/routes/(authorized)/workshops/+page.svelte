@@ -1,3 +1,5 @@
+<svelte:head><title>Workshops | SommerResiDance</title></svelte:head>
+
 <h1>Workshops</h1>
 
 <s>

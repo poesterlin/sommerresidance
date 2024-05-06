@@ -5,6 +5,8 @@
 	const pages = ['anfahrt', 'timetable', 'regeln', 'camping', 'workshops', 'faq'];
 </script>
 
+<svelte:head><title>SommerResiDance</title></svelte:head>
+
 <main>
 	<TextLogo></TextLogo>
 	<ul>
