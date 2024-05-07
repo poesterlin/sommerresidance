@@ -4,7 +4,7 @@
 	import { onMount } from 'svelte';
 
 	let width = 0;
-	$: isMobile = width < 800;
+	$: isMobile = width < 1000;
 
 	let show = false;
 	$: expanded = isMobile && show;
@@ -104,8 +104,8 @@
 	on:pointerup={stop}
 	on:touchend={stop}
 	on:click={stop}
-	on:select={noSelect}
-/>
+	/>
+	<!-- on:select={noSelect} -->
 
 <header>
 	<button on:click={() => (show = !show)} aria-label="Menü {expanded ? 'schließen' : 'öffnen'}">
@@ -157,10 +157,8 @@
 		color: black;
 		padding: 10rem 2rem;
 		user-select: none;
-	}
-
-	* {
-		cursor: default;
+		height: 100dvh;
+		pointer-events: painted;
 	}
 
 	svg {
@@ -197,12 +195,13 @@
 	}
 
 	/* mobile */
-	@media (max-width: 800px) {
+	@media (max-width: 1000px) {
 		button {
 			display: block;
 			position: fixed;
-			top: 3rem;
+			top: 2rem;
 			right: 2rem;
+			padding: 1rem;
 			z-index: 2;
 		}
 

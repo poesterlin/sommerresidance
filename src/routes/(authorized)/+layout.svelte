@@ -84,7 +84,7 @@
 
 	div {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr auto;
 		min-height: 100dvh;
 		background-color: var(--color);
 		color: var(--font-color);
@@ -92,8 +92,11 @@
 
 	main {
 		padding: 1rem;
+		margin-left: 3rem;
 		view-transition-name: main;
-		user-select: auto;
+		user-select: text;
+		margin-bottom: 20dvh;
+		max-width: 800px;
 	}
 
 	@keyframes fade-in {
