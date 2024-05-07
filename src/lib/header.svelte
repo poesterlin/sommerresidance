@@ -103,9 +103,8 @@
 	on:touchmove={update}
 	on:pointerup={stop}
 	on:touchend={stop}
-	on:click={stop}
-	/>
-	<!-- on:select={noSelect} -->
+	on:click={stop} />
+<!-- on:select={noSelect} -->
 
 <header>
 	<button on:click={() => (show = !show)} aria-label="Menü {expanded ? 'schließen' : 'öffnen'}">
@@ -113,8 +112,7 @@
 			{#if expanded}
 				<g transition:rotate={{}}>
 					<path
-						d="M21 6.41L19.59 5 12 12.59 4.41 5 3 6.41 10.59 14 3 21.59 4.41 23 12 15.41 19.59 23 21 21.59 13.41 14 21 6.41z"
-					/>
+						d="M21 6.41L19.59 5 12 12.59 4.41 5 3 6.41 10.59 14 3 21.59 4.41 23 12 15.41 19.59 23 21 21.59 13.41 14 21 6.41z" />
 				</g>
 			{:else}
 				<g transition:rotate={{}} fill="var(--font-color)">
@@ -124,12 +122,7 @@
 		</svg>
 	</button>
 
-	<ul
-		bind:this={sliderEl}
-		class:expanded
-		style:translate={toPercent(panelDelta)}
-		class:immediate={panelDelta !== 0}
-	>
+	<ul bind:this={sliderEl} class:expanded style:translate={toPercent(panelDelta)} class:immediate={panelDelta !== 0}>
 		<li aria-current={$page.url.pathname.startsWith('/anfahrt') ? 'page' : undefined}>
 			<a href="/anfahrt" data-sveltekit-replacestate>Anfahrt</a>
 		</li>
@@ -196,6 +189,11 @@
 
 	/* mobile */
 	@media (max-width: 1000px) {
+		header {
+			padding: 0;
+			min-width: 3rem;
+		}
+
 		button {
 			display: block;
 			position: fixed;

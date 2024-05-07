@@ -383,6 +383,7 @@
 		padding: 0;
 		font-weight: bold;
 		font-size: 1.5rem;
+		margin-left: -3px;
 	}
 
 	.b {
