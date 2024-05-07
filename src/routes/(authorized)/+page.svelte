@@ -90,6 +90,12 @@
 
 	/* mobile style */
 	@media (max-width: 800px) {
+		main {
+			height: auto;
+			margin-bottom: 20dvh;
+			grid-template-rows: 30dvh auto;
+		}
+
 		ul {
 			grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 			grid-template-columns: 1fr;
@@ -99,6 +105,7 @@
 		a {
 			font-size: 2rem;
 			align-items: center;
+			position: static;
 		}
 	}
 </style>
