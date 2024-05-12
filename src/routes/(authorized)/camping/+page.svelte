@@ -1,25 +1,147 @@
 <svelte:head><title>Camping | SommerResiDance</title></svelte:head>
 
 <h1>Camping</h1>
-<s>
-	<p>Das Campinggelände befindet sich direkt am Festivalgelände.</p>
 
-	<p>
-		Die Anreise mit dem Auto ist über die A4 und A71 möglich. Parkplätze sind ausreichend vorhanden.
-	</p>
+<p>
+	Für ein perfektes Festival Feeling darf das Camping natürlich nicht fehlen. Hierfür stellen wir einen extra Zeltplatz
+	neben dem Festivalgelände zur Verfügung. Bitte organisiert euch eure Zelte und Schlafutensilien selbst. Wer in seinem
+	Auto übernachten möchte, kann dies bei schönem Wetter auf dem Zeltplatz tun. Bei schlechtem Wetter oder wenn ihr
+	beispielsweise Kinder dabei habt, könnt ihr unseren Parkplatz gegenüber nutzen. Hier ist nachts besonders auf die
+	Lautstärke zu achten, da direkt nebenan Nachbarn sind.
+</p>
+<p>
+	Falls Camping für euch keine Option ist, könnt ihr bei Harry’s Gästehaus in Wolfertschwenden schauen, ob noch ein
+	Platz frei ist. Weitere Unterkünfte gibt es in Bad Grönenbach und Ottobeuren (beides ist nur mit dem Auto zu
+	erreichen).
+</p>
 
-	<p>
-		Die Anreise mit dem Zug ist über den Bahnhof Gotha möglich. Von dort aus fährt ein Shuttlebus
-		zum Campinggelände.
-	</p>
+<h2>Packliste</h2>
+<p>Folgende Dinge solltet ihr mitnehmen:</p>
+<b>Auf jeden Fall mitnehmen:</b>
+<ul>
+	<li>Essen (z.B. Brot, Nudeln, Grillzeug, Dosenfutter)</li>
+	<li>Getränke (Bier, Wein, Softdrinks, etc.)</li>
+	<li>Campingstuhl</li>
+	<li>Becher</li>
+	<li>Zelt/Camper (wenn ihr kein eigenes habt, schaut bitte, dass ihr bei jemand anderem unterkommt)</li>
+	<li>Isomatte</li>
+	<li>Schlafsack</li>
+	<li>Kissen</li>
+	<li>Trinkflasche</li>
+	<li>Teller</li>
+	<li>Besteck</li>
+	<li>Müllsack</li>
+	<li>Kleidung (dem Wetter entsprechend)</li>
+	<li>Festival-Outfit</li>
+	<li>Badelatschen (für die Dusche)</li>
+	<li>Badesachen</li>
+	<li>Sonnenbrille</li>
+	<li>Sonnenhut</li>
+	<li>Handtuch</li>
+	<li>Hygieneartikel (bitte nur biologisch abbaubares Duschgel/Shampoo)</li>
+	<li>Sonnencreme</li>
+	<li>Mückenspray</li>
+	<li>Handy, Schlüssel, Geldbeutel</li>
+	<li>PowerBank, Ladekabel</li>
+	<li>Brustbeutel/Handtasche</li>
+</ul>
 
-	<p>
-		Die Anreise mit dem Flugzeug ist über den Flugplatz Gotha-Ost möglich. Von dort aus ist das
-		Campinggelände fußläufig erreichbar.
-	</p>
+<b>Bei Bedarf mitnehmen:</b>
+<ul>
+	<li>Pavillon (wenn vorhanden und Transport möglich, bitte mitbringen)</li>
+	<li>Campingtisch</li>
+	<li>Camping-Grill/Camping-Kocher (Gas & Grillkohle erlaubt, aber kein Lagerfeuer)</li>
+	<li>Grillzange</li>
+	<li>Töpfe, Pfannen</li>
+	<li>Tasse, Schüssel</li>
+	<li>Taschenmesser</li>
+	<li>Küchenrolle, Taschentücher</li>
+	<li>Alufolie</li>
+	<li>Tupperschüsseln</li>
+	<li>Ohrstöpsel</li>
+	<li>Medikamente</li>
+	<li>Kamera</li>
+	<li>Yogamatte</li>
+	<li>Blockflöte und weitere Musikinstrumente (Gitarre, Mundharmonika, Nasenflöte,...)</li>
+	<li>Trichter</li>
+	<li>Taschen-Aschenbecher</li>
+	<li>Panzertape</li>
+	<li>Kabelbinder</li>
+	<li>Regenschirm</li>
+</ul>
 
-	<p>
-		Die Anreise mit dem Fahrrad ist über den Radweg entlang der A4 möglich. Fahrradstellplätze sind
-		ausreichend vorhanden.
-	</p>
-</s>
+<p>Folgende Dinge haben wir vor Ort:</p>
+<b>Allgemein:</b>
+<ul>
+	<li>Luftpumpe</li>
+	<li>Hammer</li>
+	<li>Schere</li>
+	<li>Klopapier</li>
+	<li>Küchenrolle</li>
+	<li>Pflaster, Erste Hilfe Kasten</li>
+	<li>Desinfektionsmittel</li>
+	<li>Spülutensilien</li>
+	<li>Toaster</li>
+	<li>Wasserkocher</li>
+	<li>Kaffeemaschine</li>
+	<li>Schneidebretter</li>
+	<li>scharfe Messer</li>
+	<li>Dosenöffner</li>
+	<li>Sieb</li>
+	<li>großer Gasgrill</li>
+	<li>Kühlwagen</li>
+	<li>Bierpongtisch</li>
+	<li>Trichter</li>
+	<li>bei gutem Wetter: Wasserrutsche (und evtl. Pool)</li>
+	<li>Aschenbecher</li>
+	<li>Shisha</li>
+</ul>
+
+<b>Nahrungsmittel:</b>
+<ul>
+	<li>Butter</li>
+	<li>Margarine</li>
+	<li>Marmelade</li>
+	<li>Nutella</li>
+	<li>Honig</li>
+	<li>vegane Aufstriche</li>
+	<li>Tee</li>
+	<li>Kaffee</li>
+	<li>Kaba</li>
+	<li>Milch</li>
+	<li>Hafermilch</li>
+	<li>Essig</li>
+	<li>Öl</li>
+	<li>Salz</li>
+	<li>Pfeffer</li>
+	<li>Zucker</li>
+	<li>Ketchup</li>
+	<li>Mayo</li>
+	<li>Senf</li>
+	<li>Grillsaucen</li>
+	<li>Obst</li>
+</ul>
+
+<b>Party-Nahrungsmittel:</b>
+<ul>
+	<li>Chilli sin Carne solange der Vorrat reicht</li>
+	<li>Wein & Aperoli solange der Vorrat reicht</li>
+	<li>Bier solange der Vorrat reicht</li>
+	<li>alkoholfreie Getränke solange der Vorrat reicht</li>
+	<li>Feinste Spirituosen-Selektion mit langer Reifung (= alter Schnaps, der weg muss)</li>
+</ul>
+
+<style>
+	h2 {
+		font-size: 1.7em;
+	}
+	p {
+		margin-bottom: 1em;
+	}
+	ul {
+		margin-bottom: 1em;
+	}
+	b {
+		font-weight: bold;
+	}
+</style>

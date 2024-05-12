@@ -92,7 +92,7 @@
 
 	main {
 		padding: 1rem;
-		margin-left: 3rem;
+		margin-left: 1rem;
 		view-transition-name: main;
 		user-select: text;
 		margin-bottom: 20dvh;

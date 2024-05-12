@@ -19,6 +19,31 @@
 			</li>
 		{/each}
 	</ul>
+	<article>
+		<h1>
+			<em>Herzlich Willkommen</em>
+			auf dem offiziellen, inoffiziellen, super wichtigen Teil der Sommerresidance.
+		</h1>
+		<p>Wenn du es bis hierher geschafft hast - hast du alles richtig gemacht!</p>
+		<p>HERZLICHEN GLÜCKWUNSCH!!</p>
+		<p>
+			Wir haben keine Philips und Mühen gescheut und hier für euch eine kleine Orientierungspage gebastelt. (also Philip
+			hat gebastelt - DANKE!!)
+		</p>
+		<p>
+			Spätestens hier solltest du bemerken, dass wir drei wirklich doll motiviert sind und hoffen, dass ALLE Gäste
+			mindestens genauso motiviert sind wie wir.
+		</p>
+		<p>
+			Alle wichtigen Dinge stehen hier und werden regelmäßig aktualisiert. Wenn ihr noch Fragen habt - erst hier
+			nachschauen, wenn ihr eure Antwort nicht gefunden habt, schaut nochmal! Wenn ihr dann immer noch nicht weiter
+			wisst, fragt gern euer zuständiges Geburtstagskind.
+		</p>
+		<p>Viel Freude in unserem kleinen VIP-Bereich hier.</p>
+		<p>Lest euch alles durch! Wir haben das hier mit viel Mühe geschrieben und Philip (DANKE) gebaut!</p>
+		<p><em>Hochachtungsvoll</em></p>
+		<p><em>Die stolzen, hochmotivierten, euch liebenden Geburtstagskinder</em></p>
+	</article>
 </main>
 
 <style>
@@ -59,6 +84,19 @@
 
 	li {
 		position: relative;
+	}
+
+	h1 {
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	article {
+		padding: 2rem;
+		padding-bottom: 20vh;
+		width: min(90vw, 1000px);
+		margin: 0 auto;
+		text-wrap: pretty;
 	}
 
 	a {
