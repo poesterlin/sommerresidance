@@ -125,6 +125,15 @@
 			wirklich wichtig ist, aktualisieren wir dafür auch gerne diese FAQ-Seite :)
 		</p>
 	</li>
+	<li>
+		<h2>Spenden</h2>
+
+		<p>
+			Wir freuen uns über jede Unterstützung, die ihr uns zukommen lasst. Gerne <a href="/donate">
+				hier über die Spenden Seite
+			</a>
+		</p>
+	</li>
 </ol>
 
 <style>
@@ -152,5 +161,10 @@
 		margin-top: 1rem;
 		margin-bottom: 0.5rem;
 		font-weight: bold;
+	}
+
+	a {
+		text-decoration: underline;
+		text-underline-offset: 5px;
 	}
 </style>

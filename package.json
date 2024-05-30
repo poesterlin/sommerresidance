@@ -30,6 +30,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@sveltejs/adapter-netlify": "^4.1.0"
+		"@sveltejs/adapter-netlify": "^4.1.0",
+		"svelte-legos": "^0.2.3"
 	}
 }

@@ -13,7 +13,7 @@
 		{#each pages as page}
 			{@const color = colorMap.get(page) ?? '#ffffff'}
 			<li style:--color={color} style:view-transition-name="page-{page}">
-				<a href={`/${page}`}>
+				<a class="page-link" href={`/${page}`}>
 					{page}
 				</a>
 			</li>
@@ -43,6 +43,14 @@
 		<p>Lest euch alles durch! Wir haben das hier mit viel Mühe geschrieben und Philip (DANKE) gebaut!</p>
 		<p><em>Hochachtungsvoll</em></p>
 		<p><em>Die stolzen, hochmotivierten, euch liebenden Geburtstagskinder</em></p>
+
+		<p>
+			<em>
+				PS: Wir freuen uns über jede Unterstützung, die ihr uns zukommen lasst. Gerne <a id="donate" href="/donate">
+					hier über die Spenden Seite
+				</a>
+			</em>
+		</p>
 	</article>
 </main>
 
@@ -99,7 +107,7 @@
 		text-wrap: pretty;
 	}
 
-	a {
+	a.page-link {
 		position: absolute;
 		inset: 0;
 		background: var(--color);
@@ -145,5 +153,9 @@
 			align-items: center;
 			position: static;
 		}
+	}
+
+	#donate {
+		text-decoration: underline;
 	}
 </style>
