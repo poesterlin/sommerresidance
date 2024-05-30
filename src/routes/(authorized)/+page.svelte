@@ -148,7 +148,7 @@
 			gap: 2rem;
 		}
 
-		a {
+		a.page-link {
 			font-size: 2rem;
 			align-items: center;
 			position: static;
