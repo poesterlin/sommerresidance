@@ -1,11 +1,21 @@
+<script lang="ts">
+	import LagePlanRaw from '$lib/assets/lageplan.jpg?url';
+	import Lageplan from '$lib/assets/lageplan.jpg?enhanced';
+</script>
+
 <svelte:head><title>Anfahrt | SommerResiDance</title></svelte:head>
 
 <h1>Anfahrt</h1>
+
+<a href={LagePlanRaw} target="_blank" rel="noopener noreferrer">
+	<enhanced:img src={Lageplan} alt="Lageplan"></enhanced:img>
+</a>
+
 <p>
 	Die Adresse ist: <br />
 	<b>
 		Hauptstraße 45, <br />
-		 87787 Wolfertschwenden
+		87787 Wolfertschwenden
 	</b>
 </p>
 
@@ -46,6 +56,11 @@
 </ul>
 
 <style>
+	img {
+		width: 100%;
+		height: auto;
+	}
+
 	ul {
 		padding-inline-start: 0;
 		list-style-type: none;

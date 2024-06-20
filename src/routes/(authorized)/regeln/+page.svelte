@@ -1,7 +1,7 @@
 <svelte:head><title>Regeln | SommerResiDance</title></svelte:head>
 
 <p>Wie überall im Leben gibt es auch bei uns auf dem Festival ein paar Dinge zu beachten.</p>
-<br>
+<br />
 <ol class="no-style">
 	<li>
 		<h2>Regel 1</h2>
@@ -37,13 +37,80 @@
 			Es können Dinge aus Versehen kaputt gehen! Dafür haben wir alle eine Versicherung!
 			<b>WICHTIG - Bitte sagt umgehend einem Geburtstagskind Bescheid, wenn etwas kaputt gegangen ist!</b>
 		</p>
+	</li>
+	<li>
+		<h2>Regel 6</h2>
 		<p>
-			Wir plädieren an den gesunden Menschenverstand und an friedfertige, intelligente, liebe und tolle Gäste, die
-			wissen, was sich gehört und was nicht.
+			Es werden keine Menschen ungefragt mitgebracht oder eingeladen! Wenn du einen Lieblingsmenschen mitbringen willst,
+			frag einfach kurz bei deinem Geburtstagskind nach. Wir können leider nicht unbegrenzt einladen - dafür ist der
+			Garten zu klein.
+		</p>
+	</li>
+	<li>
+		<h2>Regel 7</h2>
+		<p>REDE NIEMALS MIT DER POLIZEI!</p>
+		<p>
+			Wir haben uns sehr gut abgesichert, aber wenn die Polizei doch aus irgendwelchen Gründen auftaucht, bitte gebt
+			einem der Verantwortlichen Bescheid.
+			<br />
+			Das sind:
+			<br />
+			<br />
+			Sarina 0176 2370 8555
+			<br />
+			Baschdi 0157 8225 9008
+			<br />
+			Theresa 0160 360 563 9
+			<br />
+			<br />
+			oder wenn nicht erreichbar
+			<br />
+			Bruder
+			<br />
+			Schwester
+			<br />
+			<br />
+			Bis jemand von den Veranstaltern da ist, wird KEIN WORT gesagt!
+			<br />
+			Wir wollen keinen unnötigen Stress und niemanden verärgern oder nerven.
+		</p>
+	</li>
+	<li>
+		<h2>Regel 8</h2>
+		<p>
+			Jeder nimmt sein mitgebrachtes Zeug wieder mit heim. <br />
+			<br />
+			Für Kleinkram werden wir eine kleine Mülltrennstation aufbauen. Wir trennen Müll à la Hedwig
+			<br />
+			<br />
+			Das bedeutet:
+			<br />
+		</p>
+
+		<ul>
+			<li>Plastik, Kunststoff und Dosen in die Gelbe Tonne</li>
+			<li>Papier, Pappe in den Karton</li>
+			<li>Glas in den Glasmüll</li>
+			<li>Biomüll kommt auf den Kompost</li>
+			<li>Der Rest in Restmüll</li>
+		</ul>
+
+		<p>
+			Macht uns keinen Ärger & trennt penibel!
+			<br />
+
+			Die Firma dankt!
+			<br />
+
+			Bevor ihr abreist, wird euer Zeltplatz von einem Familienmitglied kontrolliert :)
 		</p>
 	</li>
 </ol>
 
+<b>
+	Generell plädieren wir an den gesunden Menschenverstand und an friedfertige, intelligente, liebe und tolle Gäste, die
+	wissen, was sich gehört und was nicht.
+</b>
 <p>DANKE Küsschen</p>
 
 <style>
@@ -51,7 +118,7 @@
 		list-style-type: none;
 	}
 
-	li {
+	.no-style > li {
 		margin-bottom: 4rem;
 	}
 

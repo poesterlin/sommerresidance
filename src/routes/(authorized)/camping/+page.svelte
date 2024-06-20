@@ -99,7 +99,6 @@
 
 <b>Nahrungsmittel:</b>
 <ul>
-	<li>Butter</li>
 	<li>Margarine</li>
 	<li>Marmelade</li>
 	<li>Nutella</li>
