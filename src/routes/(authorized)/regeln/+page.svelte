@@ -56,11 +56,14 @@
 			Das sind:
 			<br />
 			<br />
-			Sarina 0176 2370 8555
+			Sarina
+			<a class="tel" href="tel:017623708555">0176 2370 8555</a>
 			<br />
-			Baschdi 0157 8225 9008
+			Baschdi
+			<a class="tel" href="tel:015782259008">0157 8225 9008</a>
 			<br />
-			Theresa 0160 360 563 9
+			Theresa
+			<a class="tel" href="tel:01603605639">0160 360 563 9</a>
 			<br />
 			<br />
 			oder wenn nicht erreichbar
@@ -130,5 +133,10 @@
 		margin-top: 1rem;
 		margin-bottom: 0.5rem;
 		font-weight: bold;
+	}
+
+	.tel {
+		color: white;
+		text-decoration: underline;
 	}
 </style>

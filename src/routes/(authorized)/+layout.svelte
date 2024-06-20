@@ -5,6 +5,8 @@
 	import { colorMap, getFontColor } from '$lib/colors';
 	import Header from '$lib/header.svelte';
 	import { onDestroy, onMount } from 'svelte';
+	import Toast from '$lib/toast.svelte';
+	import { toasts } from '$lib/toast';
 
 	const defaultColor = '#ffffff';
 	let color = defaultColor;
@@ -77,6 +79,14 @@
 	</div>
 {/if}
 
+{#if $toasts.length > 0}
+	<div id="toasts">
+		{#each $toasts as toast (toast.id)}
+			<Toast {...toast} --color={color} --font-color={getFontColor(color)} />
+		{/each}
+	</div>
+{/if}
+
 <style>
 	:global(body) {
 		background-color: var(--prev-color, white);
@@ -137,5 +147,19 @@
 				210ms cubic-bezier(0, 0, 0.2, 1) 90ms both fade-in,
 				300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-from-right;
 		}
+	}
+
+	#toasts {
+		position: fixed;
+		display: flex;
+		pointer-events: visiblePainted;
+		flex-direction: column-reverse;
+		align-items: flex-start;
+		gap: 1rem;
+		padding: 1rem;
+		z-index: 1000;
+		bottom: 0;
+		left: 0;
+		width: min(80%, 450px);
 	}
 </style>

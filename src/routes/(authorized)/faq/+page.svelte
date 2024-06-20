@@ -1,3 +1,7 @@
+<script>
+	import { copyable } from '$lib/copy';
+</script>
+
 <svelte:head><title>FAQ | SommerResiDance</title></svelte:head>
 
 <h1>FAQs</h1>
@@ -25,7 +29,8 @@
 			</li>
 			<li>
 				<b>Ort:</b>
-				Hauptstraße 45, 87787 Wolfertschwenden (weitere Details findet ihr unter
+				<span use:copyable>Hauptstraße 45, 87787 Wolfertschwenden</span>
+				(weitere Details findet ihr unter
 				<a href="/anfahrt">Anfahrt</a>
 				)
 			</li>
