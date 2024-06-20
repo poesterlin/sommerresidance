@@ -1,10 +1,10 @@
 export const colorMap = new Map([
-	['anfahrt', '#f29200'],
-	['workshops', '#75c5bc'],
-	['faq', '#c6d23e'],
-	['camping', '#fbeb6f'],
-	['timetable', '#30ac66'],
-	['regeln', '#e7451c']
+	['anfahrt', '#F39200'],
+	['workshops', '#75C5BD'],
+	['faq', '#C8D33E'],
+	['camping', '#FEEC6E'],
+	['timetable', '#2FAC66'],
+	['regeln', '#E8461D']
 ]);
 
 export function getFontColor(hex: string) {
