@@ -17,6 +17,18 @@
 		text-underline-offset: 0.3em;
 	}
 
+	@media (prefers-reduced-motion: reduce) {
+		p {
+			animation: none;
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+		p {
+			font-size: 5em;
+		}
+	}
+
 	@keyframes rainbow {
 		0% {
 			text-decoration-color: red;
