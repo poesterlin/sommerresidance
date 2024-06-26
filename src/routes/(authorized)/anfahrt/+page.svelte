@@ -8,10 +8,6 @@
 
 <h1>Anfahrt</h1>
 
-<a href={LagePlanRaw} target="_blank" rel="noopener noreferrer">
-	<enhanced:img src={Lageplan} alt="Lageplan"></enhanced:img>
-</a>
-
 <p>
 	Die Adresse ist: <br />
 	<b use:copyable>
@@ -20,8 +16,19 @@
 	</b>
 </p>
 
-<p>Einfach beliebige App oder Kompass nutzen. Das Haus zwischen Tankstelle und Bäcker ist das richtige.</p>
+<p>
+	Einfach beliebige App oder Kompass nutzen. Das Haus zwischen Tankstelle und Bäcker ist das richtige. Unten findet ihr
+	weitere Infos zur Anfahrt.
+</p>
 
+<p>
+	Damit ihr euch direkt auf der SOMMERRESIdance zurechtfindet, schaut auf den Lageplan:
+	<a href={LagePlanRaw} target="_blank" rel="noopener noreferrer">
+		<enhanced:img src={Lageplan} alt="Lageplan"></enhanced:img>
+	</a>
+</p>
+<br />
+<h3>Details zur Anfahrt:</h3>
 <ul>
 	<li>
 		<b>Mit dem Auto:</b>
@@ -47,12 +54,10 @@
 	<li>
 		<b>Fahrgemeinschaften:</b>
 		Du kommst von weiter weg und hast hart kein Bock auf die Deutsche Bahn? Du fährst selber mit dem Auto und hast noch Platz
-		frei und Lust auf gute Unterhaltung mit netten Leuten? Dann tretet doch dieser
-		<a href="">Whats-App Gruppe bei: LINK</a>
-		Dann könnt ihr Fahrgemeinschaften bilden. Es kommen bspw. einige Leute aus Hamburg, Stuttgart, Konstanz, Augsburg, München.
-		Bitte kümmert euch um Fahrgemeinschaften :) Spritgeld und Fahrer*innen-Getränk nach Wahl dürft ihr selber ausmachen.
-		Alle Menschen, die allein im leeren Auto anreisen, müssen eine Person vom Bahnhof abholen und anschließend mit Hedwig
-		einen Vodka Brause trinken.
+		frei und Lust auf gute Unterhaltung mit netten Leuten? Dann könnt ihr Fahrgemeinschaften bilden. Es kommen bspw. einige
+		Leute aus Hamburg, Stuttgart, Konstanz, Augsburg, München. Melde dich einfach bei uns. Wir können euch eventuell connecten.
+		Spritgeld und Fahrer*innen-Getränk nach Wahl dürft ihr selber ausmachen. Alle Menschen, die mit leerem Auto anreisen,
+		müssen zur Strafe eine Person vom Bahnhof abholen und anschließend mit Hedwig einen Vodka Brause trinken.
 	</li>
 </ul>
 

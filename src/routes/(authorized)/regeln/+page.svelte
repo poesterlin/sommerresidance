@@ -1,5 +1,5 @@
 <svelte:head><title>Regeln | SommerResiDance</title></svelte:head>
-
+<h1>Regeln</h1>
 <p>Wie überall im Leben gibt es auch bei uns auf dem Festival ein paar Dinge zu beachten.</p>
 <br />
 <ol class="no-style">
@@ -10,8 +10,11 @@
 	<li>
 		<h2>Regel 2</h2>
 		<p>
-			Bitte achtet auf eure Mitmenschen! Seid respektvoll und achtet auf die Bedürfnisse aller Menschen auf und um das
-			Festival!
+			Liebt euch!
+			<br />
+			Seid respektvoll und achtet auf die Bedürfnisse aller Menschen auf und um das Festival! Seid lieb zu Anwohnern, Nachbarn
+			und Tieren. Wir haben keinen Platz für Rassismus, Sexismus, Homophobie, Ableismus, Gewalt und Hass und alle anderen
+			negativen Gedanken.
 		</p>
 	</li>
 	<li>
@@ -25,7 +28,14 @@
 			Bitte seid aufmerksam - egal ob Müll, Zigaretten und besonders GLAS - bitte ALLES in die dafür vorgesehenen
 			Behältnisse werfen!!
 		</p>
-		<p>KEIN FEUER an Nicht-Feuerstellen.</p>
+		<p>
+			<b>KEIN</b>
+			FEUER an Nicht-Feuerstellen.
+		</p>
+		<p>
+			<b>KEIN</b>
+			Betreten von gesperrten Feldern oder Bereichen.
+		</p>
 	</li>
 	<li>
 		<h2>Regel 4</h2>
@@ -69,8 +79,10 @@
 			oder wenn nicht erreichbar
 			<br />
 			Bruder
+			<a class="tel" href="tel:017621374715">0176 2137 4715</a>
 			<br />
 			Schwester
+			<a class="tel" href="tel:017664145720">0176 6414 5720</a>
 			<br />
 			<br />
 			Bis jemand von den Veranstaltern da ist, wird KEIN WORT gesagt!

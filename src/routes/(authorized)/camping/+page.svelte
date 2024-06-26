@@ -5,18 +5,22 @@
 <p>
 	Für ein perfektes Festival Feeling darf das Camping natürlich nicht fehlen. Hierfür stellen wir einen extra Zeltplatz
 	neben dem Festivalgelände zur Verfügung. Bitte organisiert euch eure Zelte und Schlafutensilien selbst. Wer in seinem
-	Auto übernachten möchte, kann dies bei schönem Wetter auf dem Zeltplatz tun. Bei schlechtem Wetter oder wenn ihr
-	beispielsweise Kinder dabei habt, könnt ihr unseren Parkplatz gegenüber nutzen. Hier ist nachts besonders auf die
-	Lautstärke zu achten, da direkt nebenan Nachbarn sind.
+	Auto übernachten möchte, kann dies bei schönem Wetter auf dem Zeltplatz tun. Es gibt keine Stromanschlüsse für
+	Campervans. Bei richtig schlechtem Wetter oder wenn ihr beispielsweise Kinder dabei habt, könnt ihr unseren Parkplatz
+	gegenüber nutzen. Hier ist nachts besonders auf die Lautstärke zu achten, da direkt nebenan Nachbarn sind.
 </p>
 <p>
-	Falls Camping für euch keine Option ist, könnt ihr bei Harry’s Gästehaus in Wolfertschwenden schauen, ob noch ein
+	Falls Camping für euch keine Option ist, könnt ihr bei Harry's Gästehaus in Wolfertschwenden schauen, ob noch ein
 	Platz frei ist. Weitere Unterkünfte gibt es in Bad Grönenbach und Ottobeuren (beides ist nur mit dem Auto zu
 	erreichen).
 </p>
 
 <h2>Packliste</h2>
-<p>Folgende Dinge solltet ihr mitnehmen:</p>
+<p>
+	Wie auf einem richtigen Festival seid ihr drei Tage selbst für euch und euer körperliches Wohlergehen verantwortlich.
+	Bitte denkt daher daran, selber Essen und Getränke mitzubringen. Es gibt vor Ort auch Einkaufsmöglichkeiten, siehe
+	FAQs. Ergänzend zu euren eigenen Mitbringseln haben wir einen kleinen Basisvorrat da. Bitte beachtet daher Folgendes:
+</p>
 <b>Auf jeden Fall mitnehmen:</b>
 <ul>
 	<li>Essen (z.B. Brot, Nudeln, Grillzeug, Dosenfutter)</li>
@@ -70,6 +74,7 @@
 	<li>Regenschirm</li>
 </ul>
 
+<h4>Auf dem Festival vorhanden</h4>
 <p>Folgende Dinge haben wir vor Ort:</p>
 <b>Allgemein:</b>
 <ul>
@@ -88,7 +93,7 @@
 	<li>scharfe Messer</li>
 	<li>Dosenöffner</li>
 	<li>Sieb</li>
-	<li>großer Gasgrill</li>
+	<li>Gasgrill</li>
 	<li>Kühlwagen</li>
 	<li>Bierpongtisch</li>
 	<li>Trichter</li>
@@ -98,6 +103,7 @@
 </ul>
 
 <b>Nahrungsmittel:</b>
+<small>(solange der Vorrat reicht)</small>
 <ul>
 	<li>Margarine</li>
 	<li>Marmelade</li>
@@ -122,6 +128,7 @@
 </ul>
 
 <b>Party-Nahrungsmittel:</b>
+<small>(solange der Vorrat reicht)</small>
 <ul>
 	<li>Chilli sin Carne solange der Vorrat reicht</li>
 	<li>Wein & Aperoli solange der Vorrat reicht</li>

@@ -47,18 +47,16 @@
 	<li>
 		<h2>Verpflegung und Getränke</h2>
 		<p>
-			Wie auf jedem guten Festival seid ihr auf euch selbst gestellt, was eure Verpflegung angeht. Eine gewisse
-			Grundlage an Getränke- und Essensvorrat werden wir aber natürlich bereitstellen. Für die weitere Verpflegung vor
-			Ort befindet sich gleich neben dem Gelände ein Bäcker und ein Metzger. In 5 Minuten ist der Dorfladen
-			Wolfertschwenden zu Fuß erreichbar. Mit dem Auto ist man in 5 Minuten in Bad Grönenbach, wo es Netto und Edeka
-			gibt. Außerdem ist am Samstag und Sonntag das Sommerfest des Fußballvereins Wolfertschwenden. Dort könnt ihr
-			vorbei schlendern und euch Bier, Bockwurst & Co. gönnen. Wir werden einen Grill bereitstellen, den ihr benutzen
-			dürft. Es werden euch natürlich auch Kühlmöglichkeiten und Trinkwasser zur Verfügung gestellt. Gaskocher und
-			weiteres Camping-Equipment dürft ihr gerne mitbringen, sie sind auf dem Festival- und Campinggelände erlaubt. Für
-			weitere Infos, was ihr (nicht) mitbringen müsst, schaut bitte unbedingt in die Packliste auf der <a
-				href="/camping">
-				Seite Camping.
-			</a>
+			Wie auf jedem guten Festival seid ihr auf euch selbst gestellt, was eure Verpflegung angeht. Eine kleine Grundlage
+			an Getränken werden wir aber natürlich bereitstellen. Für die weitere Verpflegung vor Ort befindet sich gleich
+			neben dem Gelände ein Bäcker und ein Metzger. In 5 Minuten ist der Dorfladen Wolfertschwenden zu Fuß erreichbar.
+			Mit dem Auto ist man in 5 Minuten in Bad Grönenbach, wo es Netto und Edeka gibt. Am Freitag Abend gibt es Pommes
+			(solange der Vorrat reicht). Außerdem ist am Samstag und Sonntag das Sommerfest des Fußballvereins
+			Wolfertschwenden. Dort könnt ihr vorbei schlendern und euch Bier, Bockwurst & Co. gönnen - SUPPORT THE LOCALS. Wir
+			werden einen Grill bereitstellen, den ihr benutzen dürft. Es werden euch natürlich auch Kühlmöglichkeiten und
+			Trinkwasser zur Verfügung gestellt. Gaskocher und weiteres Camping-Equipment dürft ihr gerne mitbringen, sie sind
+			auf dem Festival- und Campinggelände erlaubt. Für weitere Infos, was ihr (nicht) mitbringen müsst, schaut bitte
+			unbedingt in die Packliste auf der <a href="/camping">Seite Camping.</a>
 		</p>
 	</li>
 
@@ -67,10 +65,10 @@
 
 		<p>
 			Wir werden einen Klowagen organisieren, den ihr jederzeit benutzen dürft und müsst. Zuwiderhandlungen haben
-			schwerwiegende Folgen - mehr dazu in unseren AGBs. Eine Außendusche mit Sichtschutz wird ebenfalls hergerichtet.
-			Bitte bringt hierfür biologisches Shampoo mit, wenn ihr es vorhanden habt. Wir werden für die restlichen Personen
-			einen Vorrat an biologischem Shampoo bereitstellen. Herkömmliches Shampoo darf in der Außendusche nicht verwendet
-			werden.
+			schwerwiegende Folgen - mehr dazu <a href="/AGBs.PDF">in unseren AGBs</a>
+			. Eine Außendusche mit Sichtschutz wird ebenfalls hergerichtet. Bitte bringt hierfür biologisches Shampoo mit, wenn
+			ihr es vorhanden habt. Wir werden für die restlichen Personen einen Vorrat an biologischem Shampoo bereitstellen. Herkömmliches
+			Shampoo darf in der Außendusche nicht verwendet werden
 		</p>
 	</li>
 
@@ -78,10 +76,10 @@
 		<h2>Programm und Ablauf</h2>
 
 		<p>
-			Um auf dem aktuellen Stand zu sein, haltet euch über die <a href="/timetable">Seite Timetable</a>
-			auf dem Laufenden. Generell werden wir euch tagsüber mit Workshops und Spielen bei Laune halten. Für jede*n wird hier
-			was dabei sein! Bis ca. 22:00 Uhr, werden euch unsere DJ's und Bands mit Musik verwöhnen. Um den Nachbarn nicht sämtliche
-			Nerven zu rauben, könnt ihr euch danach in unserem Partyzelt die Seele aus dem Leib tanzen oder am Lagerfeuer chillen.
+			Um auf dem aktuellen Stand zu sein, haltet euch über die Seite Timetable auf dem Laufenden. Generell werden wir
+			euch tagsüber mit Workshops und Spielen bei Laune halten. Für jede*n wird hier was dabei sein! Bis ca. 22:00 Uhr,
+			werden euch unsere DJ's und Bands mit Musik verwöhnen. Um den Nachbar*innen nicht sämtliche Nerven zu rauben,
+			könnt ihr euch danach in unserem Partyzelt “NIGHT PARK” die Seele aus dem Leib tanzen oder am Lagerfeuer chillen.
 		</p>
 	</li>
 
@@ -107,8 +105,7 @@
 		<p>
 			Habt eine tolle Zeit und achtet bitte aufeinander. Wir wollen gute Vibes und einen Ort, an dem sich alle
 			wohlfühlen. Wir hoffen, dass es nicht benötigt wird, aber sollte es einen Notfall geben, dann wendet euch bitte an
-			eines der Geburtstagskinder (Theresa, Baschdi oder Sarina) oder an Hedwig (Theresas Mama) oder Erich (Sarinas
-			Papa).
+			eines der Geburtstagskinder (Theresa, Baschdi oder Sarina) oder an Familie Göser oder Familie Ernst.
 		</p>
 	</li>
 	<li>
@@ -119,7 +116,8 @@
 			unser Festival bereichert. Von Veranstaltungspunkten wie Workshops und Auftritten bis hin zu selbst gebrautem
 			Bier, einer schönen Deko, Hilfe beim Auf- und Abbau oder was euch sonst so einfällt. Wenn ihr mitgestalten wollt,
 			meldet euch gerne bei uns im Voraus! Wenn euch nichts einfällt, freuen wir uns aber auch über finanzielle
-			Unterstützung. Vor Ort stellen wir eine Spendenkasse auf.
+			Unterstützung. Vor Ort stellen wir eine Spendenkasse auf und es wird einen QR-Code geben, über den ihr
+			<a href="/donate">per PayPal spenden könnt.</a>
 		</p>
 	</li>
 	<li>
@@ -128,15 +126,6 @@
 		<p>
 			Sind noch Fragen offen? Dann schreibt uns. Kann gut sein, dass wir eine wichtige Info vergessen haben. Wenn's
 			wirklich wichtig ist, aktualisieren wir dafür auch gerne diese FAQ-Seite :)
-		</p>
-	</li>
-	<li>
-		<h2>Spenden</h2>
-
-		<p>
-			Wir freuen uns über jede Unterstützung, die ihr uns zukommen lasst. Gerne <a href="/donate">
-				hier über die Spenden Seite
-			</a>
 		</p>
 	</li>
 </ol>
