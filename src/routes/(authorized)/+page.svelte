@@ -1,6 +1,20 @@
 <script lang="ts">
+	import { page } from '$app/stores';
 	import { colorMap } from '$lib/colors';
 	import TextLogo from '$lib/text-logo.svelte';
+
+	const images = import.meta.glob('$lib/assets/*.png', {
+		eager: true,
+		query: {
+			enhanced: true,
+			w: 320
+		}
+	});
+
+	function getImage(page: string) {
+		const { default: img } = images[`/src/lib/assets/${page}.png`] as { default: string };
+		return img;
+	}
 
 	const pages = ['anfahrt', 'timetable', 'regeln', 'camping', 'workshops', 'faq'];
 </script>
@@ -11,10 +25,11 @@
 	<TextLogo></TextLogo>
 	<ul>
 		{#each pages as page}
+			{@const src = getImage(page)}
 			{@const color = colorMap.get(page) ?? '#ffffff'}
 			<li style:--color={color} style:view-transition-name="page-{page}">
 				<a class="page-link" href={`/${page}`}>
-					{page}
+					<enhanced:img {src} alt={page} />
 				</a>
 			</li>
 		{/each}
@@ -43,14 +58,6 @@
 		<p>Lest euch alles durch! Wir haben das hier mit viel Mühe geschrieben und Philip (DANKE) gebaut!</p>
 		<p><em>Hochachtungsvoll</em></p>
 		<p><em>Die stolzen, hochmotivierten, euch liebenden Geburtstagskinder</em></p>
-
-		<p>
-			<em>
-				PS: Wir freuen uns über jede Unterstützung, die ihr uns zukommen lasst. Gerne <a id="donate" href="/donate">
-					hier über die Spenden Seite
-				</a>
-			</em>
-		</p>
 	</article>
 </main>
 
@@ -86,12 +93,23 @@
 		display: grid;
 		grid-template-rows: 1fr 1fr;
 		grid-template-columns: 1fr 1fr 1fr;
-		gap: 5rem 20rem;
+		gap: 5rem;
+		margin: auto;
+		justify-content: space-evenly;
+		align-items: center;
 		list-style: none;
 	}
 
 	li {
-		position: relative;
+		display: flex;
+		justify-content: center;
+		box-shadow: inset 0 0 0 10px var(--color);
+	}
+
+	img {
+		width: 100%;
+		object-fit: cover;
+		object-position: center;
 	}
 
 	h1 {
@@ -103,26 +121,12 @@
 		padding: 2rem;
 		padding-bottom: 20vh;
 		width: min(90vw, 1000px);
-		margin: 0 auto;
+		margin: 4vh auto 0;
 		text-wrap: pretty;
 	}
 
-	a.page-link {
-		position: absolute;
-		inset: 0;
-		background: var(--color);
-		display: flex;
-		align-items: flex-end;
-		justify-content: center;
-		padding: 1rem;
-		font-size: 4rem;
-		width: 100%;
-		text-decoration: none;
-		text-transform: uppercase;
-	}
-
 	a:hover {
-		box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+		box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
 	}
 
 	/* medium style */
@@ -153,9 +157,5 @@
 			align-items: center;
 			position: static;
 		}
-	}
-
-	#donate {
-		text-decoration: underline;
 	}
 </style>
