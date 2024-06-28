@@ -105,11 +105,6 @@
 <b>Nahrungsmittel:</b>
 <small>(solange der Vorrat reicht)</small>
 <ul>
-	<li>Margarine</li>
-	<li>Marmelade</li>
-	<li>Nutella</li>
-	<li>Honig</li>
-	<li>vegane Aufstriche</li>
 	<li>Tee</li>
 	<li>Kaffee</li>
 	<li>Kaba</li>
@@ -123,17 +118,17 @@
 	<li>Ketchup</li>
 	<li>Mayo</li>
 	<li>Senf</li>
-	<li>Grillsaucen</li>
 	<li>Obst</li>
 </ul>
 
 <b>Party-Nahrungsmittel:</b>
 <small>(solange der Vorrat reicht)</small>
 <ul>
-	<li>Chilli sin Carne solange der Vorrat reicht</li>
-	<li>Wein & Aperoli solange der Vorrat reicht</li>
-	<li>Bier solange der Vorrat reicht</li>
-	<li>alkoholfreie Getränke solange der Vorrat reicht</li>
+	<li>Pommes</li>
+	<li>Wein & Aperoli</li>
+	<li>Bier</li>
+	<li>Leitungswasser</li>
+	<li>alkoholfreie Getränke</li>
 	<li>Feinste Spirituosen-Selektion mit langer Reifung (= alter Schnaps, der weg muss)</li>
 </ul>
 

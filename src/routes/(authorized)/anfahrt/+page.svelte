@@ -1,6 +1,6 @@
 <script lang="ts">
-	import LagePlanRaw from '$lib/assets/lageplan.jpg?url';
-	import Lageplan from '$lib/assets/lageplan.jpg?enhanced';
+	import LagePlanRaw from '$lib/assets/lageplan.png?url';
+	import Lageplan from '$lib/assets/lageplan.png?enhanced';
 	import { copyable } from '$lib/copy';
 </script>
 
