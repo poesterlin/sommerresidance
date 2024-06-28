@@ -65,7 +65,7 @@
 	main {
 		height: 100dvh;
 		display: grid;
-		grid-template-rows: auto 60dvh;
+		grid-template-rows: auto auto;
 		padding: 1rem;
 		width: 100%;
 		max-width: 1600px;
