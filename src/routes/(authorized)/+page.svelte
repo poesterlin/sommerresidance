@@ -40,20 +40,43 @@
 			auf dem offiziellen, inoffiziellen, super wichtigen Teil der Sommerresidance.
 		</h1>
 		<p>Wenn du es bis hierher geschafft hast - hast du alles richtig gemacht!</p>
-		<p>HERZLICHEN GLÜCKWUNSCH!!</p>
+		<p><b>HERZLICHEN GLÜCKWUNSCH!!</b></p>
 		<p>
 			Wir haben keine Philips und Mühen gescheut und hier für euch eine kleine Orientierungspage gebastelt. (also Philip
 			hat gebastelt - DANKE!!)
 		</p>
 		<p>
 			Spätestens hier solltest du bemerken, dass wir drei wirklich doll motiviert sind und hoffen, dass ALLE Gäste
-			mindestens genauso motiviert sind wie wir.
+			mindestens doppelt, wenn nicht genauso motiviert sind wie wir.
 		</p>
 		<p>
-			Alle wichtigen Dinge stehen hier und werden regelmäßig aktualisiert. Wenn ihr noch Fragen habt - erst hier
-			nachschauen, wenn ihr eure Antwort nicht gefunden habt, schaut nochmal! Wenn ihr dann immer noch nicht weiter
-			wisst, fragt gern euer zuständiges Geburtstagskind.
+			Alle wichtigen Dinge stehen hier und werden regelmäßig aktualisiert.
+			<br />
+			Wenn ihr noch Fragen habt - erst hier nachschauen!
+			<br />
+			Wenn ihr eure Antwort nicht gefunden habt, schaut nochmal!
+			<br />
+			Wenn ihr dann immer noch nicht weiter wisst, fragt gern euer zuständiges Geburtstagskind.
 		</p>
+
+		<p>
+			Deine Vorfreude ist bereits im Unermesslichen?
+			<br />
+			Du würdest am liebsten jeden Schritt der Planung mitverfolgen?
+			<br />
+			Du könntest jederzeit explodieren vor Partylust-Overdose?
+			<br />
+			Um euch vor und auf unserem Festival zu erreichen, dürft ihr gerne
+			<a class="link" href={import.meta.env.VITE_WA_GROUP} target="_blank">
+				DIESEM LINK folgen und unserer WhatsApp Gruppe beitreten.
+			</a>
+		</p>
+
+		<p>
+			Lest euch alles durch! Wir haben das hier mit viel Mühe ausgedacht und geschrieben. Es sind viele Infos, aber wir
+			wollen eine unbeschwerte, problemlose Zeit mit jedem einzelnen von euch.
+		</p>
+
 		<p>Viel Freude in unserem kleinen VIP-Bereich hier.</p>
 		<p>Lest euch alles durch! Wir haben das hier mit viel Mühe geschrieben und Philip (DANKE) gebaut!</p>
 		<p><em>Hochachtungsvoll</em></p>
@@ -125,8 +148,12 @@
 		text-wrap: pretty;
 	}
 
-	a:hover {
+	a:hover img {
 		box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+	}
+
+	a.link {
+		text-decoration: underline;
 	}
 
 	/* medium style */
