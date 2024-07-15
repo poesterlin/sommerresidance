@@ -211,13 +211,15 @@
 		margin: 0;
 		padding: 0 0.5rem;
 		float: right;
+		position: relative;
+		z-index: 2;
 	}
 
 	article :global(picture),
 	article img {
 		grid-column: 1 / span 2;
 		grid-row: 1 / span 3;
-		width: calc(100% + 50px);
+		width: 100%;
 		height: 100%;
 		object-fit: cover;
 	}
@@ -229,13 +231,19 @@
 		font-size: 1.7rem;
 	}
 
+	footer {
+		text-align: center;
+	}
+
+	h5 {
+		font-size: 2rem;
+		margin-top: 0;
+		font-weight: normal;
+	}
+
 	@container main (max-width: 600px) {
-		h1,
 		h2 {
 			font-size: 3rem;
-		}
-
-		h2 {
 			padding-left: 1ch;
 		}
 
@@ -251,7 +259,9 @@
 			padding: 0.5rem;
 		}
 		section {
-			border: 1rem solid var(--col);
+			border: 0;
+			outline: 1rem solid var(--col);
+			z-index: -1;
 			padding: 0.5rem;
 		}
 	}
@@ -269,6 +279,8 @@
 		.time {
 			font-size: 1.5rem;
 			line-height: 1.8;
+			z-index: 3;
+			position: relative;
 		}
 	}
 </style>

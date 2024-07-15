@@ -193,8 +193,7 @@
 		letter-spacing: 0.5rem;
 	}
 
-	article.nolink,
-	article a {
+	article.nolink{
 		display: grid;
 		grid-template-areas: 'img overlap time' 'img . .' 'img overlap artist';
 		grid-template-columns: 50% 50px auto;
@@ -224,13 +223,15 @@
 		margin: 0;
 		padding: 0 0.5rem;
 		float: right;
+		position: relative;
+		z-index: 2;
 	}
 
 	article :global(picture),
 	article img {
 		grid-column: 1 / span 2;
 		grid-row: 1 / span 3;
-		width: calc(100% + 50px);
+		width: 100%;
 		height: 100%;
 		object-fit: cover;
 	}
@@ -270,7 +271,9 @@
 			padding: 0.5rem;
 		}
 		section {
-			border: 1rem solid var(--col);
+			border: 0;
+			outline: 1rem solid var(--col);
+			z-index: -1;
 			padding: 0.5rem;
 		}
 	}
@@ -288,6 +291,8 @@
 		.time {
 			font-size: 1.5rem;
 			line-height: 1.8;
+			z-index: 3;
+			position: relative;
 		}
 	}
 </style>
