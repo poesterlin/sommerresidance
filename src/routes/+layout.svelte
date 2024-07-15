@@ -15,7 +15,7 @@
 	let show = false;
 
 	onMount(() => {
-		const time = dev ? 10_000 : 30_000;
+		const time = dev ? 100_000 : 30_000;
 		const interval = setInterval(() => {
 			imageIndex = (imageIndex + 1) % imageKeys.length;
 			show = !show;

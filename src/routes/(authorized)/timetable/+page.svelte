@@ -1,54 +1,212 @@
-<svelte:head><title>Timetable | SommerResiDance</title></svelte:head>
-<h1>Timetable</h1>
+<script>
+	import LENER from '$lib/assets/bands/LENER.png?enhanced';
+</script>
 
-<p>Coming soon!</p>
+<svelte:head><title>Timetable | SommerResiDance</title></svelte:head>
+<header>
+	<h1>TIMETABLE</h1>
+	<h2>FREITAG</h2>
+	<h3>bandday</h3>
+</header>
+
+<em>allgemein</em>
+<div class="table-wrapper">
+	<table>
+		<tr>
+			<td>ab 12</td>
+			<td>Anreise</td>
+		</tr>
+		<tr>
+			<td>Nammittag</td>
+			<td>
+				Zeltaufbau, <br />
+				1. Bier/Aperol gönnen, Kennenlernen
+			</td>
+		</tr>
+		<tr>
+			<td>18.00</td>
+			<td>
+				<b>
+					Official Start (DIE REDE)
+					<br />
+					PFLICHTTERMIN
+				</b>
+			</td>
+		</tr>
+	</table>
+</div>
+
+<em>music</em>
+<section id="music">
+	<h4>MAIN FIELD</h4>
+	<article>
+		<div class="time"><span class="bg">18.30 - 19.00</span></div>
+		<enhanced:img src={LENER} alt="LENER"></enhanced:img>
+		<p>
+			<span class="bg band">LENER</span>
+			<br />
+			<span class="bg">Singer Songweiterin</span>
+		</p>
+	</article>
+
+	<article>
+		<div class="time"><span class="bg">19.00 - 20.30</span></div>
+		<enhanced:img src={LENER} alt="LENER"></enhanced:img>
+		<p>
+			<span class="bg band">WET PAINT</span>
+			<br />
+			<span class="bg">Cover Rock Band</span>
+		</p>
+	</article>
+
+	<article>
+		<div class="time"><span class="bg">20.45 - 21.15</span></div>
+		<enhanced:img src={LENER} alt="LENER"></enhanced:img>
+		<p>
+			<span class="bg band">Die Apparillos</span>
+			<br />
+			<span class="bg">Party Schlager</span>
+		</p>
+	</article>
+
+	<article>
+		<div class="time"><span class="bg">21.30 - 23.00</span></div>
+		<enhanced:img src={LENER} alt="LENER"></enhanced:img>
+		<p>
+			<span class="bg band">C . S . 0</span>
+			<br />
+			<span class="bg">Hard Trance Groove</span>
+		</p>
+	</article>
+</section>
 
 <style>
-	h1 {
+	header {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	h1,
+	h2,
+	h3 {
+		text-align: center;
+		font-size: 5rem;
+		margin: 0 auto;
+		padding: 0;
+		display: inline;
+		font-weight: normal;
+	}
+
+	h2 {
+		background: orange;
+		letter-spacing: 1rem;
+	}
+
+	h3 {
+		letter-spacing: 0.5rem;
+		font-size: 3rem;
+	}
+
+	em {
+		font-style: normal;
+		font-size: 1.5rem;
+		letter-spacing: 0.5rem;
+		margin: 1rem;
+		margin-top: 2rem;
+		display: block;
+	}
+
+	.table-wrapper {
+		padding: 0 1rem;
+		width: 100%;
+		border: 1px solid orange;
+	}
+
+	table {
+		margin: 0 auto;
+		width: 100%;
+		padding: 1rem;
+		border-collapse: collapse;
+	}
+
+	tr:not(:last-child) {
+		border-bottom: 1px solid white;
+	}
+
+	td {
+		padding: 1rem;
+	}
+
+	td:first-child {
+		text-align: center;
+	}
+
+	td:last-child {
+		letter-spacing: 0.2rem;
+	}
+
+	section {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		border: 1rem solid orange;
+		padding: 1rem;
+	}
+
+	h4 {
+		font-size: 3rem;
+		text-align: center;
+		padding: 0;
 		margin-top: 0;
+		letter-spacing: 0.5rem;
 	}
 
-	p {
-		margin-top: 0;
-		animation: rainbow 5s infinite;
-		font-size: 8em;
-		text-decoration: wavy underline;
-		text-underline-offset: 0.3em;
+	article {
+		display: grid;
+		grid-template-areas: 'img overlap time' 'img . .' 'img overlap artist';
+		grid-template-columns: 1fr 30px auto;
+		grid-template-rows: auto 50px auto;
+		width: 100%;
+		margin-bottom: 3rem;
 	}
 
-	@media (prefers-reduced-motion: reduce) {
-		p {
-			animation: none;
-		}
+	.time {
+		grid-column: 2 / span 2;
+		grid-row: 1;
+		font-size: 2rem;
+		z-index: 1;
+		font-weight: bold;
+		margin-top: 2rem;
+		letter-spacing: 0.1rem;
 	}
 
-	@media screen and (max-width: 600px) {
-		p {
-			font-size: 5em;
-		}
+	.band {
+		font-weight: bold;
 	}
 
-	@keyframes rainbow {
-		0% {
-			text-decoration-color: red;
-		}
-		16% {
-			text-decoration-color: orange;
-		}
-		33% {
-			text-decoration-color: yellow;
-		}
-		50% {
-			text-decoration-color: green;
-		}
-		66% {
-			text-decoration-color: blue;
-		}
-		83% {
-			text-decoration-color: indigo;
-		}
-		100% {
-			text-decoration-color: violet;
-		}
+	span.bg {
+		color: black;
+		background: #ffffff90;
+		text-align: right;
+		margin: 0;
+		padding: 0 0.5rem;
+		float: right;
+	}
+
+	article :global(picture), article img{
+		grid-column: 1 / span 2;
+		grid-row: 1 / span 3;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	article p {
+		grid-column: 2 / span 2;
+		grid-row: 3;
+		margin-bottom: 3rem;
+		font-size: 1.7rem;
 	}
 </style>
