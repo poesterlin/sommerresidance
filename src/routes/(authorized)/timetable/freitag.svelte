@@ -231,18 +231,9 @@
 		font-size: 1.7rem;
 	}
 
-	footer {
-		text-align: center;
-	}
-
-	h5 {
-		font-size: 2rem;
-		margin-top: 0;
-		font-weight: normal;
-	}
-
 	@container main (max-width: 600px) {
-		h2 {
+		h2,
+		h1 {
 			font-size: 3rem;
 			padding-left: 1ch;
 		}
@@ -267,7 +258,8 @@
 	}
 
 	@container main (max-width: 400px) {
-		h2 {
+		h2,
+		h1 {
 			font-size: 2rem;
 		}
 
