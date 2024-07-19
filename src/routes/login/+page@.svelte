@@ -18,7 +18,7 @@
 			</p>
 		{/if}
 
-		<input type="submit" hidden />
+		<button type="submit">Einloggen</button>
 	</form>
 </main>
 
@@ -28,10 +28,7 @@
 		place-items: center;
 		height: 100dvh;
 		background-image: url('/logo.jpg');
-		background-image: image-set(
-			url('/logo.avif') type('image/avif'),
-			url('/logo.webp') type('image/webp')
-		);
+		background-image: image-set(url('/logo.avif') type('image/avif'), url('/logo.webp') type('image/webp'));
 		background-size: cover;
 		background-position: center;
 		background-attachment: fixed;
@@ -45,6 +42,7 @@
 		padding: 1rem;
 		border-radius: 0.5rem;
 		box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+		gap: 1rem;
 	}
 
 	input {
@@ -72,5 +70,16 @@
 		font-weight: bold;
 		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 		font-size: 1rem;
+	}
+
+	button {
+		padding: 0.5rem;
+		border: 0;
+		border-radius: 0.25rem;
+		box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.15);
+		background: var(--color-theme-1);
+		color: white;
+		font-weight: bold;
+		cursor: pointer;
 	}
 </style>
