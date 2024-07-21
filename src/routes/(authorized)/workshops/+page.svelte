@@ -358,9 +358,14 @@
 	}
 
 	td:first-child {
-		width: 20ch;
 		font-weight: bold;
 		letter-spacing: normal;
+	}
+
+	@media (min-width: 600px) {
+		td:first-child {
+			width: 22ch;
+		}
 	}
 
 	tr:not(:last-child) {
