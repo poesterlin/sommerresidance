@@ -27,7 +27,9 @@
 		</tr>
 		<tr>
 			<td>11.00 - 16.00</td>
-			<td>Yoga mit Julia</td>
+			<td>
+				<a href="/workshops">Workshops - HIER</a>
+			</td>
 		</tr>
 	</table>
 </div>
@@ -161,6 +163,12 @@
 		border-collapse: collapse;
 	}
 
+	a {
+		color: white;
+		text-decoration: underline;
+		text-underline-offset: 0.2rem;
+	}
+
 	tr:not(:last-child) {
 		border-bottom: 1px solid white;
 	}
@@ -193,7 +201,7 @@
 		letter-spacing: 0.5rem;
 	}
 
-	article.nolink{
+	article.nolink {
 		display: grid;
 		grid-template-areas: 'img overlap time' 'img . .' 'img overlap artist';
 		grid-template-columns: 50% 50px auto;
