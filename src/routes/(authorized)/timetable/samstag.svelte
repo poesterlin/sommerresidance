@@ -49,9 +49,9 @@
 
 	<article class="nolink">
 		<div class="time"><span class="bg">14.00-15.30</span></div>
-		<enhanced:img src={getImage('DJESSENCE.png')} alt="DJ Essence"></enhanced:img>
+		<enhanced:img src={getImage('DJESSENCE.png')} alt="DJ ESSNCE"></enhanced:img>
 		<p>
-			<span class="bg band">DJ ESSENCE</span>
+			<span class="bg band">DJ ESSNCE</span>
 			<br />
 			<span class="bg">Festival Sound</span>
 		</p>
