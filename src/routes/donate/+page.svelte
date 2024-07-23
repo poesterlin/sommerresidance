@@ -7,7 +7,7 @@
 	const account = import.meta.env.VITE_PAYPAL_ACCOUNT;
 	const colors = Array.from(colorMap.values());
 
-	$: href = amount ? `https://paypal.me/${account}/${amount}` : `https://paypal.me/${account}`;
+	$: href = amount ? `https://paypal.me/${account}/${amount}EUR` : `https://paypal.me/${account}`;
 </script>
 
 <main>
@@ -69,13 +69,12 @@
 	main::after {
 		content: '';
 		position: absolute;
-		inset: 0;
-		background-image: url('/logo.jpg');
-		background-image: image-set(url('/logo.avif') type('image/avif'), url('/logo.webp') type('image/webp'));
-		filter: invert();
+		inset: -20px;
+		background-image: url('/donate.webp');
 		background-size: cover;
 		background-position: center;
 		background-attachment: fixed;
+		filter: blur(10px) brightness(0.9);
 		z-index: -1;
 	}
 
@@ -106,20 +105,18 @@
 		font-size: 3rem;
 		color: white;
 		text-align: center;
-		text-shadow: 0px 0px 8px #0f0f0f91;
 		font-weight: bold;
 	}
 
 	big {
 		font-size: 70px;
-		text-shadow: 0px 0px 8px #0f0f0f91;
 		color: white;
 		margin-left: 1ch;
 		font-weight: bold;
 	}
 
 	button.selected {
-		box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 1);
+		box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.123);
 		transform: scale(1.1);
 	}
 
@@ -131,7 +128,7 @@
 		cursor: pointer;
 		font-weight: bold;
 		border: 0;
-		box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.3);
+		box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.021);
 		color: var(--font);
 		background: var(--color);
 		transition: all 0.2s cubic-bezier(0.11, 0.7, 0.58, 1);
