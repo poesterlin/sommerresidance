@@ -1,10 +1,7 @@
 <script lang="ts">
 	import WorkshopImg from '$lib/assets/workshop.jpg?enhanced';
 	import WorkshopImgRaw from '$lib/assets/workshop.jpg?url';
-
-	import ActiveImg from '$lib/assets/active.webp?url';
-
-	console.log(ActiveImg);
+	import ActiveImg from '$lib/assets/donate.webp?url';
 
 	const friday = '2024-07-26';
 	const saturday = '2024-07-27';
