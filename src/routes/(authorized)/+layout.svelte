@@ -107,6 +107,7 @@
 		user-select: text;
 		margin-bottom: 20dvh;
 		max-width: 800px;
+		margin: auto;
 	}
 
 	@keyframes fade-in {
