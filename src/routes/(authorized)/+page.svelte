@@ -16,7 +16,7 @@
 		return img;
 	}
 
-	const pages = ['timetable', 'timetable', 'regeln', 'camping', 'workshops', 'faq'];
+	const pages = ['anfahrt', 'timetable', 'regeln', 'camping', 'workshops', 'faq'];
 </script>
 
 <svelte:head><title>SommerResiDance</title></svelte:head>
@@ -28,7 +28,7 @@
 			{@const src = getImage(page)}
 			{@const color = colorMap.get(page) ?? '#ffffff'}
 			<li style:--color={color} style:view-transition-name="page-{page}">
-				<a class="page-link" href={`/${page}`}>
+				<a class="page-link" href={page === 'anfahrt' ? '/timetable' : `/${page}`}>
 					<enhanced:img {src} alt={page} />
 				</a>
 			</li>
