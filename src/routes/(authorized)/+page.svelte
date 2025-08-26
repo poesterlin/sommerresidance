@@ -16,7 +16,7 @@
 		return img;
 	}
 
-	const pages = ['anfahrt', 'timetable', 'regeln', 'camping', 'workshops', 'faq'];
+	const pages = ['timetable', 'timetable', 'regeln', 'camping', 'workshops', 'faq'];
 </script>
 
 <svelte:head><title>SommerResiDance</title></svelte:head>
