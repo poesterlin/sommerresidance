@@ -66,10 +66,10 @@
 			<br />
 			Du könntest jederzeit explodieren vor Partylust-Overdose?
 			<br />
-			Um euch vor und auf unserem Festival zu erreichen, dürft ihr gerne
+			<!-- Um euch vor und auf unserem Festival zu erreichen, dürft ihr gerne
 			<a class="link" href={import.meta.env.VITE_WA_GROUP} target="_blank">
 				DIESEM LINK folgen und unserer WhatsApp Gruppe beitreten.
-			</a>
+			</a> -->
 		</p>
 
 		<p>
