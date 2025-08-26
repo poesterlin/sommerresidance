@@ -123,9 +123,9 @@
 	</button>
 
 	<ul bind:this={sliderEl} class:expanded style:translate={toPercent(panelDelta)} class:immediate={panelDelta !== 0}>
-		<li aria-current={$page.url.pathname.startsWith('/anfahrt') ? 'page' : undefined}>
+		<!-- <li aria-current={$page.url.pathname.startsWith('/anfahrt') ? 'page' : undefined}>
 			<a href="/anfahrt" data-sveltekit-replacestate>Anfahrt</a>
-		</li>
+		</li> -->
 		<li aria-current={$page.url.pathname.startsWith('/faq') ? 'page' : undefined}>
 			<a href="/faq" data-sveltekit-replacestate>FAQ</a>
 		</li>

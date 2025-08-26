@@ -27,13 +27,13 @@
 				<b>Abreise:</b>
 				Sonntag bis 16:00 Uhr
 			</li>
-			<li>
+			<!-- <li>
 				<b>Ort:</b>
 				<span use:copyable>Hauptstraße 45, 87787 Wolfertschwenden</span>
 				(weitere Details findet ihr unter
 				<a href="/anfahrt">Anfahrt</a>
 				)
-			</li>
+			</li> -->
 		</ul>
 
 		<p>
@@ -44,7 +44,7 @@
 		</p>
 	</li>
 
-	<li>
+	<!-- <li>
 		<h2>Verpflegung und Getränke</h2>
 		<p>
 			Wie auf jedem guten Festival seid ihr auf euch selbst gestellt, was eure Verpflegung angeht. Eine kleine Grundlage
@@ -58,7 +58,7 @@
 			auf dem Festival- und Campinggelände erlaubt. Für weitere Infos, was ihr (nicht) mitbringen müsst, schaut bitte
 			unbedingt in die Packliste auf der <a href="/camping">Seite Camping.</a>
 		</p>
-	</li>
+	</li> -->
 
 	<li>
 		<h2>Sanitärbereich</h2>

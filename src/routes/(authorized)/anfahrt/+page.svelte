@@ -8,13 +8,13 @@
 
 <h1>Anfahrt</h1>
 
-<p>
+<!-- <p>
 	Die Adresse ist: <br />
 	<b use:copyable>
 		Hauptstraße 45, <br />
 		87787 Wolfertschwenden
 	</b>
-</p>
+</p> -->
 
 <p>
 	Einfach beliebige App oder Kompass nutzen. Das Haus zwischen Tankstelle und Bäcker ist das richtige. Unten findet ihr
@@ -28,7 +28,7 @@
 	</a>
 </p>
 <br />
-<h3>Details zur Anfahrt:</h3>
+<!-- <h3>Details zur Anfahrt:</h3>
 <ul>
 	<li>
 		<b>Mit dem Auto:</b>
@@ -59,7 +59,7 @@
 		Spritgeld und Fahrer*innen-Getränk nach Wahl dürft ihr selber ausmachen. Alle Menschen, die mit leerem Auto anreisen,
 		müssen zur Strafe eine Person vom Bahnhof abholen und anschließend mit Hedwig einen Vodka Brause trinken.
 	</li>
-</ul>
+</ul> -->
 
 <style>
 	img {
