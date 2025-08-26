@@ -108,6 +108,8 @@
 		margin-bottom: 20dvh;
 		max-width: 800px;
 		margin: auto;
+		min-width: 40vw;
+		width: 100%;
 	}
 
 	@keyframes fade-in {
